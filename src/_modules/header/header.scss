@@ -2,14 +2,81 @@
 
     $h: &;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__logo {
+        @include mq(md) {
+            margin-left: 40px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__nav {
+        @include trans;
+        opacity: 0;
+        overflow: hidden;
+        width: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(md) {
+            opacity: 1;
+            position: relative;
+            height: auto;
+            justify-content: flex-end;
+        }
+
+        &__list {
+            @include mq(md) {
+                display: flex;
+            }
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+
+                    @include mq(md) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                @include mq(md) {
+                    margin-right: 40px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
     &__hamburguer {
         cursor: pointer;
         width: 25px;
-        height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 32px;
-        top: 30px;
+        height: 21px;
+        z-index: 1000;
+
+        @include mq(md) {
+            display: none;
+        }
 
         span {
             background-color: $mainColor;
@@ -49,7 +116,9 @@
         }
 
         #{$h}__nav {
-
+            opacity: 1;
+            overflow: visible;
+            width: 100%;
         }
     }
 }
