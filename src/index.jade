@@ -1,6 +1,7 @@
 extends _layouts/base
 
 include ./_modules/slider/slider
+include ./_modules/product/product
 
 block content
     main.home
@@ -10,32 +11,46 @@ block content
                     .home__hero__slide-group
                         .home__hero__slide-image
                             img.-desktop(src="/images/home/slide-1.jpg")
-                            img.-mobile(src="/images/home/slide-1.jpg")
+                            img.-mobile(src="/images/home/slide-1-mobile.jpg")
                         .home__hero__slide-content
-                            .home__hero__slide-title Seat Ibiza Reference MT.
-                            .home__hero__slide-text El nuevo SEAT Ibiza está diseñado para que te subas a él sin pensártelo dos veces. Su perfil aerodinamico permite que te muevas más rápido, de forma más estable y consumiendo menos combustible.
+                            h2.home__hero__slide-title SEAT Ibiza Reference MT.
+                            p.home__hero__slide-text El nuevo SEAT Ibiza está diseñado para que te subas a él sin pensártelo dos veces. Su perfil aerodinamico permite que te muevas más rápido, de forma más estable y consumiendo menos combustible.
                 .home__hero__slide
                     .home__hero__slide-group
                         .home__hero__slide-image
                             img(src="https://picsum.photos/1300/1300")
                         .home__hero__slide-content
-                            .home__hero__slide-title Lorem ipsum dolor sit amet.
-                            .home__hero__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            h2.home__hero__slide-title Lorem ipsum dolor sit amet.
+                            p.home__hero__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                 .home__hero__slide
                     .home__hero__slide-group
                         .home__hero__slide-image
                             img(src="https://picsum.photos/1100/1200")
                         .home__hero__slide-content
-                            .home__hero__slide-title Lorem ipsum dolor sit amet.
-                            .home__hero__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            h2.home__hero__slide-title Lorem ipsum dolor sit amet.
+                            p.home__hero__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
         section.home__products
             .home__products__wrapper
-                ul.home__products__filters
-                    li Todos
-                    li Ibiza
-                    li Arona
-                    li León
-                    li Ateca
+                .home__products__filter-group
+                    .home__products__filter-selector filtrar
+                    ul.home__products__filters
+                        li Todos
+                        li Ibiza
+                        li Arona
+                        li León
+                        li Ateca
                 .home__products__file
-                    img(src="#")
+                    .home__products__file-image
+                        img(src="/images/home/icon-download.png")
                     p Descargar Ficha Técnica
+            .-divider
+            .container
+                .row
+                    each item in site.data.product
+                        .col-24.col-md-6
+                            +product(item)
+                    .col-24
+                        .home__products__leyend
+                            p *Valor no incluye impuesto verde y patente
+                            p (1): Impuesto a las emisiones contaminantes.
+                            p (2): Primera inscripción, SOAP y permiso de circulación.

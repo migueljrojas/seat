@@ -1,0 +1,56 @@
+[
+  {
+    "image":"/images/home/ibiza-reference.png",
+    "title": "Ibiza Reference",
+    "color":"Plata Urbano",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/ibiza-style.png",
+    "title": "Ibiza Style",
+    "color":"Azul Misterio",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/ibiza-fr.png",
+    "title": "Ibiza FR",
+    "color":"Gris Magnético",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/arona-reference.png",
+    "title": "Arona Reference",
+    "color":"Rojo Deseo",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/arona-style.png",
+    "title": "Arona Style",
+    "color":"Gris Magnético",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/arona-fr.png",
+    "title": "Arona FR",
+    "color":"Plata Urbano Gris",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/leon-cupra.png",
+    "title": "León CUPRA",
+    "color":"Rojo Deseo",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/leon-fr.png",
+    "title": "León FR",
+    "color":"Azul Misterio",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  },
+  {
+    "image":"/images/home/ateca.png",
+    "title": "Ateca Excellence",
+    "color":"Rojo Terciopelo",
+    "description":"1.0 MPI 59kW [80 CV] Reference Plus"
+  }
+]

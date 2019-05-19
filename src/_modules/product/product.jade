@@ -1,0 +1,32 @@
+mixin product(data)
+  .product
+    .product__image
+      img(src=data.image)
+    .product__content
+      h2.product__title=data.title
+      p.product__description
+        span=data.color
+        br
+        span=data.description
+      p.product__text
+        |Precio Lista
+        br
+        |$23.590.000*
+      p.product__text
+        |Bono Online
+        br
+        |$23.590.000*
+      p.product__text
+        |Precio Online
+        br
+        span.-big $23.590.000*
+      .product__text-small
+        p Impuesto Verde: $753.823
+        span.-subindex (1)
+      .product__text-small
+        p Patente: $555.209
+        span.-subindex (2)
+      .product__buttons
+        a.product__button.product__button--ghost(href="#") Reservar
+        a.product__button(href="#") Comprar
+
