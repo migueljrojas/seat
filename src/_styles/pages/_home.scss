@@ -32,19 +32,44 @@
       position: relative;
 
       @include mq(md) {
-        padding-bottom: 34%;
+        width: 65%;
+        padding-bottom: 31%;
+      }
+
+      .-desktop {
+        display: none;
+
+        @include mq(md) {
+          display: block;
+        }
+      }
+
+      .-mobile {
+        @include mq(md) {
+          display: none;
+        }      
       }
   
       img {
         position: absolute;
         height: auto;
         width: 100%;
+        
+        @include mq(md) {
+          height: auto;
+          width: 100%;
+
+        }
       }
     }
 
     &__slide-content {
       background: $red;
       padding: 40px;
+
+      @include mq(md) {
+        width: 35%;
+      }
     }
 
     &__slide-title {

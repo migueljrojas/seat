@@ -7,11 +7,25 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding: 2vh 0;
+
+        @include mq(md) {
+            padding: 20px 0;
+        }
     }
 
     &__logo {
+        height: 6vh;
+        z-index: 2000;
+
         @include mq(md) {
             margin-left: 40px;
+            height: 4vh;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
         }
     }
 
@@ -35,12 +49,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1000;
+        transform: translateX(-100%);
 
         @include mq(md) {
             opacity: 1;
             position: relative;
             height: auto;
             justify-content: flex-end;
+            transform: translateX(0);
         }
 
         &__list {
@@ -119,6 +136,7 @@
             opacity: 1;
             overflow: visible;
             width: 100%;
+            transform: translateX(0);
         }
     }
 }
