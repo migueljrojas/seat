@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Seat Bcn - Web UltraLight Cond';
+    src: url('SeatBcn-Web-UltraLightCondensedItalic.eot');
+    src: url('SeatBcn-Web-UltraLightCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-UltraLightCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-UltraLightCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-UltraLightCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-UltraLightCondensedItalic.svg#SeatBcn-Web-UltraLightCondensedItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Medium Condensed';
+    src: url('SeatBcn-Web-MediumCondensedItalic.eot');
+    src: url('SeatBcn-Web-MediumCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-MediumCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-MediumCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-MediumCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-MediumCondensedItalic.svg#SeatBcn-Web-MediumCondensedItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Book';
+    src: url('SeatBcn-Web-BookItalic.eot');
+    src: url('SeatBcn-Web-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BookItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BookItalic.woff') format('woff'),
+        url('SeatBcn-Web-BookItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BookItalic.svg#SeatBcn-Web-BookItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Light.eot');
+    src: url('SeatBcn-Web-Light.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Light.woff2') format('woff2'),
+        url('SeatBcn-Web-Light.woff') format('woff'),
+        url('SeatBcn-Web-Light.ttf') format('truetype'),
+        url('SeatBcn-Web-Light.svg#SeatBcn-Web-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Medium.eot');
+    src: url('SeatBcn-Web-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Medium.woff2') format('woff2'),
+        url('SeatBcn-Web-Medium.woff') format('woff'),
+        url('SeatBcn-Web-Medium.ttf') format('truetype'),
+        url('SeatBcn-Web-Medium.svg#SeatBcn-Web-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Italic.eot');
+    src: url('SeatBcn-Web-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Italic.woff2') format('woff2'),
+        url('SeatBcn-Web-Italic.woff') format('woff'),
+        url('SeatBcn-Web-Italic.ttf') format('truetype'),
+        url('SeatBcn-Web-Italic.svg#SeatBcn-Web-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web UltraLight Cond';
+    src: url('SeatBcn-Web-UltraLightCondensed.eot');
+    src: url('SeatBcn-Web-UltraLightCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-UltraLightCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-UltraLightCondensed.woff') format('woff'),
+        url('SeatBcn-Web-UltraLightCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-UltraLightCondensed.svg#SeatBcn-Web-UltraLightCondensed') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-UltraLightItalic.eot');
+    src: url('SeatBcn-Web-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-UltraLightItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-UltraLightItalic.woff') format('woff'),
+        url('SeatBcn-Web-UltraLightItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-UltraLightItalic.svg#SeatBcn-Web-UltraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Book';
+    src: url('SeatBcn-Web-Book.eot');
+    src: url('SeatBcn-Web-Book.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Book.woff2') format('woff2'),
+        url('SeatBcn-Web-Book.woff') format('woff'),
+        url('SeatBcn-Web-Book.ttf') format('truetype'),
+        url('SeatBcn-Web-Book.svg#SeatBcn-Web-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-LightItalic.eot');
+    src: url('SeatBcn-Web-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-LightItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-LightItalic.woff') format('woff'),
+        url('SeatBcn-Web-LightItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-LightItalic.svg#SeatBcn-Web-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Condensed';
+    src: url('SeatBcn-Web-Condensed.eot');
+    src: url('SeatBcn-Web-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Condensed.woff2') format('woff2'),
+        url('SeatBcn-Web-Condensed.woff') format('woff'),
+        url('SeatBcn-Web-Condensed.ttf') format('truetype'),
+        url('SeatBcn-Web-Condensed.svg#SeatBcn-Web-Condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Condensed';
+    src: url('SeatBcn-Web-BoldCondensed.eot');
+    src: url('SeatBcn-Web-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BoldCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-BoldCondensed.woff') format('woff'),
+        url('SeatBcn-Web-BoldCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-BoldCondensed.svg#SeatBcn-Web-BoldCondensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Bold.eot');
+    src: url('SeatBcn-Web-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Bold.woff2') format('woff2'),
+        url('SeatBcn-Web-Bold.woff') format('woff'),
+        url('SeatBcn-Web-Bold.ttf') format('truetype'),
+        url('SeatBcn-Web-Bold.svg#SeatBcn-Web-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Black Condensed';
+    src: url('SeatBcn-Web-BlackCondensed.eot');
+    src: url('SeatBcn-Web-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BlackCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-BlackCondensed.woff') format('woff'),
+        url('SeatBcn-Web-BlackCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-BlackCondensed.svg#SeatBcn-Web-BlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Black Condensed';
+    src: url('SeatBcn-Web-BlackCondensedItalic.eot');
+    src: url('SeatBcn-Web-BlackCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BlackCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BlackCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-BlackCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BlackCondensedItalic.svg#SeatBcn-Web-BlackCondensedItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Regular.eot');
+    src: url('SeatBcn-Web-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Regular.woff2') format('woff2'),
+        url('SeatBcn-Web-Regular.woff') format('woff'),
+        url('SeatBcn-Web-Regular.ttf') format('truetype'),
+        url('SeatBcn-Web-Regular.svg#SeatBcn-Web-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-Black.eot');
+    src: url('SeatBcn-Web-Black.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-Black.woff2') format('woff2'),
+        url('SeatBcn-Web-Black.woff') format('woff'),
+        url('SeatBcn-Web-Black.ttf') format('truetype'),
+        url('SeatBcn-Web-Black.svg#SeatBcn-Web-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Bold Condensed';
+    src: url('SeatBcn-Web-BoldCondensedItalic.eot');
+    src: url('SeatBcn-Web-BoldCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BoldCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BoldCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-BoldCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BoldCondensedItalic.svg#SeatBcn-Web-BoldCondensedItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Book Condensed';
+    src: url('SeatBcn-Web-BookCondensedItalic.eot');
+    src: url('SeatBcn-Web-BookCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BookCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BookCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-BookCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BookCondensedItalic.svg#SeatBcn-Web-BookCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-UltraLight.eot');
+    src: url('SeatBcn-Web-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-UltraLight.woff2') format('woff2'),
+        url('SeatBcn-Web-UltraLight.woff') format('woff'),
+        url('SeatBcn-Web-UltraLight.ttf') format('truetype'),
+        url('SeatBcn-Web-UltraLight.svg#SeatBcn-Web-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Condensed';
+    src: url('SeatBcn-Web-CondensedItalic.eot');
+    src: url('SeatBcn-Web-CondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-CondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-CondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-CondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-CondensedItalic.svg#SeatBcn-Web-CondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-BlackItalic.eot');
+    src: url('SeatBcn-Web-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BlackItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BlackItalic.woff') format('woff'),
+        url('SeatBcn-Web-BlackItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BlackItalic.svg#SeatBcn-Web-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Light Condensed';
+    src: url('SeatBcn-Web-LightCondensedItalic.eot');
+    src: url('SeatBcn-Web-LightCondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-LightCondensedItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-LightCondensedItalic.woff') format('woff'),
+        url('SeatBcn-Web-LightCondensedItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-LightCondensedItalic.svg#SeatBcn-Web-LightCondensedItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-MediumItalic.eot');
+    src: url('SeatBcn-Web-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-MediumItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-MediumItalic.woff') format('woff'),
+        url('SeatBcn-Web-MediumItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-MediumItalic.svg#SeatBcn-Web-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Medium Condensed';
+    src: url('SeatBcn-Web-MediumCondensed.eot');
+    src: url('SeatBcn-Web-MediumCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-MediumCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-MediumCondensed.woff') format('woff'),
+        url('SeatBcn-Web-MediumCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-MediumCondensed.svg#SeatBcn-Web-MediumCondensed') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Book Condensed';
+    src: url('SeatBcn-Web-BookCondensed.eot');
+    src: url('SeatBcn-Web-BookCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BookCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-BookCondensed.woff') format('woff'),
+        url('SeatBcn-Web-BookCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-BookCondensed.svg#SeatBcn-Web-BookCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web';
+    src: url('SeatBcn-Web-BoldItalic.eot');
+    src: url('SeatBcn-Web-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-BoldItalic.woff2') format('woff2'),
+        url('SeatBcn-Web-BoldItalic.woff') format('woff'),
+        url('SeatBcn-Web-BoldItalic.ttf') format('truetype'),
+        url('SeatBcn-Web-BoldItalic.svg#SeatBcn-Web-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Seat Bcn - Web Light Condensed';
+    src: url('SeatBcn-Web-LightCondensed.eot');
+    src: url('SeatBcn-Web-LightCondensed.eot?#iefix') format('embedded-opentype'),
+        url('SeatBcn-Web-LightCondensed.woff2') format('woff2'),
+        url('SeatBcn-Web-LightCondensed.woff') format('woff'),
+        url('SeatBcn-Web-LightCondensed.ttf') format('truetype'),
+        url('SeatBcn-Web-LightCondensed.svg#SeatBcn-Web-LightCondensed') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
