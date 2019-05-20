@@ -1,0 +1,192 @@
+.ingresar-datos {
+  &__container {
+    @include mq(md) {
+      display: flex;
+    }
+  }
+
+  &__form {
+    padding: 0 20px;
+
+    @include mq(md) {
+      padding: 0 150px;
+      width: 70%;
+    }
+
+    &__title {
+      font-weight: 900;
+      
+      @include mq(md) {
+        font-size: 28px;
+
+      }
+    }
+
+    &__text {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__group {
+      width: 100%;
+
+      &--half {
+        @include mq(md) {
+          width: 48%;
+        }
+      }
+
+      &--checkbox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+
+    &__input {
+      border: none;
+      border-bottom: 1px solid $lightGray;
+      margin-bottom: 40px;
+      width: 100%;
+      padding-bottom: 10px;
+      outline: none;
+
+      &--rut-main {
+        width: 80%;
+
+        @include mq(md) {
+          width: 48%;
+        }
+      }
+
+      &--rut {
+        width: 16%;
+
+        @include mq(md) {
+          width: 10%;
+        }
+      }
+
+      &--checkbox {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+    
+    &__label {
+      color: $orange;
+    }
+
+    &__select {
+      width: 100%;
+      margin-bottom: 40px;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $lightGray;
+    }
+  }
+
+  &__payment-details {
+    background: $lightestGray;
+    position: relative;
+    padding: 40px 20px;
+    
+    @include mq(md) {
+      padding: 40px 80px;
+      width: 30%;
+    }    
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to top, $lightestGray, $white);
+    }
+
+    &__subtitle {
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 0;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 50%;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $lightGray;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &__payment-options {
+      width: 100%;
+      border-bottom: 1px solid $lightGray;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto;
+      }
+    }
+
+    &__group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      
+      p {
+        margin: 0;
+      }
+  
+      .-dark {
+        font-weight: 700;
+      }
+    }
+
+    &__total {
+      display: block;
+      background: $orange;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 700;
+      color: $white;
+      font-size: 14px;
+    }
+  }
+}

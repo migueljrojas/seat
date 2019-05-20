@@ -1,0 +1,53 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main.ingresar-datos
+    .ingresar-datos__container
+      form.ingresar-datos__form
+        h2.ingresar-datos__form__title Ingresa tus datos
+        p.ingresar-datos__form__text Para comprar tu SEAT, deberás ingresar tus datos a continuación y pagar el valor total mediante tarjeta de crédito. una vez recibido el pago, el concesionario elegido tomará contacto contigo para indicarte los pasos a seguir para retirar tu nuevo SEAT.
+        .ingresar-datos__form__wrapper
+          .ingresar-datos__form__group
+            input.ingresar-datos__form__input.ingresar-datos__form__input--rut-main(type="number" placeholder="RUT")
+            span -
+            input.ingresar-datos__form__input.ingresar-datos__form__input--rut(type="number")
+          .ingresar-datos__form__group.ingresar-datos__form__group--half
+            input.ingresar-datos__form__input(type="text" placeholder="Nombre")
+          .ingresar-datos__form__group.ingresar-datos__form__group--half
+            input.ingresar-datos__form__input(type="text" placeholder="Apellido")
+          .ingresar-datos__form__group.ingresar-datos__form__group--half
+            input.ingresar-datos__form__input(type="number" placeholder="Celular")
+          .ingresar-datos__form__group.ingresar-datos__form__group--half
+            input.ingresar-datos__form__input(type="email" placeholder="Email")
+          .ingresar-datos__form__group
+            select.ingresar-datos__form__select
+              option(selected hidden disabled) Concesionario
+              option Concesionario 1
+              option Concesionario 2
+              option Concesionario 3
+          .ingresar-datos__form__group.ingresar-datos__form__group--checkbox
+            input.ingresar-datos__form__input.ingresar-datos__form__input--checkbox(type="checkbox" checked)
+            label.ingresar-datos__form__label Acepto términos y condiciones
+
+      .ingresar-datos__payment-details
+        h3.ingresar-datos__payment-details__subtitle Modelo a comprar
+        h2.ingresar-datos__payment-details__title Ibiza Reference MT
+        .ingresar-datos__payment-details__image
+          img(src="/images/home/ibiza-reference.png")
+        .ingresar-datos__payment-details__payment-options
+          img(src="/images/payment-methods.png")
+        .ingresar-datos__payment-details__group
+          p Impuesto Verde
+          p $142.500
+        .ingresar-datos__payment-details__group
+          p Patente
+          p $239.868
+        .ingresar-datos__payment-details__group
+          p.-dark Precio Total
+          p.-dark $11.372.368
+        span.ingresar-datos__payment-details__total Pagar Total $11.372.368
+
