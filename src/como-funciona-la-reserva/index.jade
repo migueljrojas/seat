@@ -1,0 +1,23 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+  main.how-it-works
+    .container
+      .row
+        .col-24.col-sm-18.col-md-14
+          h1.how-it-works__title Cómo funciona la reserva
+          ul.how-it-works__list
+            li Todos los vehí­culos publicados en esta página corresponden a <span>unidades nuevas</span>.
+            li Si te gusta un modelo podrás reservarlo mediante el botón <span>"Reservar"</span>, para lo cual deberás completar los datos solicitados y elegir el concesionario en el cuál deseas realizar la compra.
+            li El valor de la reserva es de CLP $500.000 y tiene una vigencia de 48 horas. Si el proceso pago de la misma no se completa en un plazo de 5 minutos, el vehículo será liberado y otro cliente podrá reservarlo/comprarlo.
+            li El monto de la reserva será abonado al valor final del monto reservado.
+            li Una vez finalizado el pago de la reserva recibirás un email con el comprobante de la transacción realizada y el concesionario elegido se contactará contigo en un plazo de 24 horas para seguir con el proceso de compra.
+          a.how-it-works__goback(href="/") Volver
+
+
+
+

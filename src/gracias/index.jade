@@ -1,0 +1,14 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+  main.info
+    .container
+      .row
+        .col-24
+          h1.info__title Muchas gracias
+          p.info__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          a.info__goback(href="/") Volver

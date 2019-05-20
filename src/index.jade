@@ -34,12 +34,12 @@ block content
                 .home__products__filter-group
                     .home__products__filter-selector filtrar
                     ul.home__products__filters
-                        li Todos
-                        li Ibiza
-                        li Arona
-                        li León
-                        li Ateca
-                .home__products__file
+                        li.-active(data-filter="all") Todos
+                        li(data-filter="ibiza") Ibiza
+                        li(data-filter="arona") Arona
+                        li(data-filter="leon") León
+                        li(data-filter="ateca") Ateca
+                a.home__products__file(href="#", target="_blank")
                     .home__products__file-image
                         img(src="/images/home/icon-download.png")
                     p Descargar Ficha Técnica
@@ -47,7 +47,7 @@ block content
             .container
                 .row
                     each item in site.data.product
-                        .col-24.col-md-6
+                        .col-24.col-md-6.home__products__item(data-category=item.category)
                             +product(item)
                     .col-24
                         .home__products__leyend

@@ -1,0 +1,20 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+  main.how-it-works
+    .container
+      .row
+        .col-24.col-sm-18.col-md-14
+          h1.how-it-works__title Cómo funciona la compra
+          ul.how-it-works__list
+            li Todos los vehículos publicados en esta página corresponden a <span>unidades nuevas</span>.
+            li Si te gusta un modelo podrás comprarlo mediante el botón <span>"Comprar"</span>, para lo cual deberás completar los datos solicitados y elegir el concesionario en el cual deseas finalizar el proceso compra.
+            li El monto final a pagar incluye los valores del Impuesto Verde y de la Patente correspondientes a cada auto.
+            li Si el proceso pago no se completa en un plazo de 5 minutos, el vehículo será liberado y otro cliente podrá reservarlo/comprarlo.
+            li Una vez finalizado el pago recibirás un email con el comprobante de la transacción realizada y el concesionario elegido se contactará contigo en un plazo de 24 horas para seguir con el proceso de compra.
+          a.how-it-works__goback(href="/") Volver
+

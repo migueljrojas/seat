@@ -116,6 +116,7 @@
 
     &__filter-group {
       border-bottom: 1px solid $lightGray;
+      position: relative;
 
       @include mq(md) {
         display: flex;
@@ -134,6 +135,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      cursor: pointer;
 
       &:after {
         content: '';
@@ -153,9 +155,16 @@
     }
 
     &__filters {
+      @include trans;
+
       height: 0;
       opacity: 0;
       overflow: hidden;
+
+      &.-open {
+        height: 220px;
+        opacity: 1;
+      }
       
       @include mq(md) {
         display: flex;
@@ -168,9 +177,40 @@
         color: $black;
         font-weight: 700;
         font-size: 12px;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        padding: 0 15px;
+
+        &:after {
+          @include trans;
+
+          content: '';
+          height: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 100%;
+          background: $black;
+        }
 
         &:not(:last-child) {
-          margin-right: 30px;
+          @include mq(md) {
+            margin-right: 30px;
+          }
+        }
+
+        @include mq(md) {
+          padding: 0 3px;
+          height: 70px;
+          line-height: 70px;
+        }
+
+        &.-active {
+          &:after {
+            right: 0;
+          }
         }
       }
     }
@@ -180,6 +220,8 @@
       align-items: center;
       justify-content: center;
       padding: 20px 40px 20px 0;
+      color: $darkestGray;
+      text-decoration: none;
       
       @include mq(md) {
         border-left: 1px solid $lightGray;
@@ -189,6 +231,8 @@
       p {
         margin: 0;
         font-size: 14px;
+        color: $darkestGray;
+        text-decoration: none;
       }
     }
 
@@ -230,6 +274,12 @@
             margin-bottom: 0;
           }
         }
+      }
+    }
+
+    &__item {
+      &.-hidden {
+        display: none;
       }
     }
   }

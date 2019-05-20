@@ -1,0 +1,31 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+  main.contacto
+    .container
+      .row
+        .col-24
+          h1.contacto__title Contacto
+          p.contacto__subtitle Ponte en contacto con SEAT, envíanos tu consulta mediante el siguiente formulario.
+          
+          form.contacto__form
+            .row
+              .col-24.col-sm-8
+                .contacto__form__group
+                  input.contacto__form__input(type="text" placeholder="Nombre")
+              .col-24.col-sm-8
+                .contacto__form__group
+                  input.contacto__form__input(type="text" placeholder="Apellido")
+              .col-24.col-sm-8
+                .contacto__form__group
+                  input.contacto__form__input(type="email" placeholder="Email")
+              .col-24
+                .contacto__form__group
+                  textarea.contacto__form__input(placeholder="Mensaje")
+              .col-24
+                .contacto__form__group
+                  button.contacto__form__submit Enviar

@@ -2,7 +2,7 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
   main.ingresar-datos
@@ -12,15 +12,15 @@ block content
         p.ingresar-datos__form__text Para comprar tu SEAT, deberás ingresar tus datos a continuación y pagar el valor total mediante tarjeta de crédito. una vez recibido el pago, el concesionario elegido tomará contacto contigo para indicarte los pasos a seguir para retirar tu nuevo SEAT.
         .ingresar-datos__form__wrapper
           .ingresar-datos__form__group
-            input.ingresar-datos__form__input.ingresar-datos__form__input--rut-main(type="number" placeholder="RUT")
+            input.ingresar-datos__form__input.ingresar-datos__form__input--rut-main(type="text" placeholder="RUT")
             span -
-            input.ingresar-datos__form__input.ingresar-datos__form__input--rut(type="number")
+            input.ingresar-datos__form__input.ingresar-datos__form__input--rut(type="text")
           .ingresar-datos__form__group.ingresar-datos__form__group--half
             input.ingresar-datos__form__input(type="text" placeholder="Nombre")
           .ingresar-datos__form__group.ingresar-datos__form__group--half
             input.ingresar-datos__form__input(type="text" placeholder="Apellido")
           .ingresar-datos__form__group.ingresar-datos__form__group--half
-            input.ingresar-datos__form__input(type="number" placeholder="Celular")
+            input.ingresar-datos__form__input(type="text" placeholder="Celular")
           .ingresar-datos__form__group.ingresar-datos__form__group--half
             input.ingresar-datos__form__input(type="email" placeholder="Email")
           .ingresar-datos__form__group
@@ -49,5 +49,5 @@ block content
         .ingresar-datos__payment-details__group
           p.-dark Precio Total
           p.-dark $11.372.368
-        span.ingresar-datos__payment-details__total Pagar Total $11.372.368
+        button.ingresar-datos__payment-details__total Pagar Total $11.372.368
 
